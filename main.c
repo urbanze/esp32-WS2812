@@ -63,7 +63,7 @@ void rgb(uint8_t r, uint8_t g, uint8_t b)
 
     rmt_tx_start(RMT_CHANNEL_0, 1);
     rmt_wait_tx_done(RMT_CHANNEL_0, pdMS_TO_TICKS(5));
-    ets_delay_us(10);
+    ets_delay_us(55);
     rmt_tx_stop(RMT_CHANNEL_0);
 }
 
